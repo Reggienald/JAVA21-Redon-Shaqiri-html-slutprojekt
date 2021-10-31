@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personlig Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <p>Personlig Portfolio</p>
+            <nav>
+                <ul id="menulist">
+                    <li><a href="./index.html">Startsida</a></li>
+                    <li><a href="./about.html">Om mig</a></li>
+                    <li><a href="./contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+    <!-- main -->
+
+        <img class="img-banner" src="images/mysqlbanner.jpg" alt="Mysqlbanner">
+        <div class="wrapper">
+            <article class="img-info">
+                <h2>MySQL</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at sem dui. Vivamus dignissim sit amet orci ut porttitor. In ac pellentesque enim, nec posuere ante. Praesent ultricies velit imperdiet pellentesque bibendum. Nam at purus diam.</p>
+                <p> Praesent et consequat elit. Etiam eu elit ullamcorper, laoreet orci eget, consequat nunc. Nullam in hendrerit metus, id pharetra lorem. Duis pulvinar et neque eu dignissim. Vivamus eget orci scelerisque, faucibus arcu sit amet, tincidunt felis. Nulla porttitor mauris sapien, in gravida quam blandit sollicitudin. Curabitur suscipit ullamcorper arcu sed viverra.</p>
+            </article>
+        </div>
+
+        <div class="photowrap">
+            <div class="imgphp-col imgsql-col">
+                <a href="https://www.youtube.com/watch?v=9ylj9NR0Lcg">
+                <img src="images/mysql1.png" alt="projektbild-mysql-1">
+                <div class="overlay"></div>
+                </a>
+            </div>
+    
+            <div class="imgphp-col imgsql-col">
+                <img src="images/lightning.png" alt="projektbild-mysql-2">
+            </div>
+    
+            <div class="imgphp-col imgsql-col">
+                <a href="https://firebrand.training/se/kurser/app-och-web-development/open-source-php-mysql-drupal">
+                <img src="images/php.mysqlimg.png" alt="projektbild-mysql-3">
+                <div class="overlay"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/Shejkis">
+            <img src="images/fb.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com">
+            <img src="images/tw.png" alt="twitter">
+            <a/>
+            <a href="https://www.instagram.com/redonshaqiri/">
+            <img src="images/ig.png" alt="instagram">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Script -->
+
+        <script>
+
+            var menulist = document.getElementById("menulist");
+    
+            menulist.style.maxHeight = "0px";
+    
+            function togglemenu(){
+    
+                if(menulist.style.maxHeight == "0px")
+                {
+                menulist.style.maxHeight = "130px"
+                }
+                else
+                {
+                    menulist.style.maxHeight = "0px"
+                }
+            }
+    
+        </script>
+        
+    </body>
+    </html>

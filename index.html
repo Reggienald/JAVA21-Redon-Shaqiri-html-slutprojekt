@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personlig Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <p>Personlig Portfolio</p>
+            <nav>
+                <ul id="menulist">
+                    <li><a href="./index.html">Startsida</a></li>
+                    <li><a href="./about.html">Om mig</a></li>
+                    <li><a href="./contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        
+        <div class="row">
+            <main>
+            <div class="col-1">
+                <h2>Jag heter<br>Redon Shaqiri</h2>
+                <h3>Front-End Web Developer</h3>
+                <p>Jag gör er hemsida magisk</p>
+                <h4>CV</h4>
+                <button type="button">Ladda ner<img src="images/arrow.png"</button></div>
+            </main>
+            <section>
+                <div class="social-icon" id="iconids">
+                    <div class="icon">
+                        <img src="images/html.jpg">
+                        <a href="html.html" alt="ProjekthemsidaHtml">
+                        <img src="images/link.png">
+                         </a><p>Html</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/css.png">
+                        <a href="css.html" alt="ProjekthemsidaCss">
+                        <img src="images/link.png">
+                         </a><p>Css</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/jvs.png">
+                        <a href="javascript.html" alt="ProjekthemsidaJavascript">
+                        <img src="images/link.png">
+                         </a><p>Javascript</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/php.png">
+                        <a href="Php.html" alt="ProjekthemsidaPhp">
+                        <img src="images/link.png">
+                        </a><p>Php</p>
+                    </div>
+                    <div class="icon">
+                        <img src="images/mysql.jpg">
+                        <a href="MySQL.html" alt="ProjekthemsidaMySQL">
+                        <img src="images/link.png">
+                         </a><p>MySQL</p>
+                    </div>
+                </div>
+                </section>
+
+            <aside>
+        <div class="col-2">
+            <img src="images/profilbild.jpg" class="profilbild">
+            <div class="color-box"></div>
+            </div>
+        </aside>
+        </div>
+    </div>
+
+        <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/Shejkis">
+            <img src="images/fb.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com">
+            <img src="images/tw.png" alt="twitter">
+            <a/>
+            <a href="https://www.instagram.com/redonshaqiri/">
+            <img src="images/ig.png" alt="instagram">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+
+        var menulist = document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if(menulist.style.maxHeight == "0px")
+            {
+            menulist.style.maxHeight = "130px"
+            }
+            else
+            {
+                menulist.style.maxHeight = "0px"
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

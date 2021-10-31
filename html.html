@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personlig Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar navbargrid">
+            <img src="images/logo.png" class="logo">
+            <p>Personlig Portfolio</p>
+            <nav>
+                <ul id="menulist">
+                    <li><a href="./index.html">Startsida</a></li>
+                    <li><a href="./about.html">Om mig</a></li>
+                    <li><a href="./contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+
+
+        <img class="img-banner" src="images/htmlbanner.gif" alt="htmlbanner">
+        <div class="wrapper">
+            <article class="img-info">
+                <h2>HTML</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at sem dui. Vivamus dignissim sit amet orci ut porttitor. In ac pellentesque enim, nec posuere ante. Praesent ultricies velit imperdiet pellentesque bibendum. Nam at purus diam.</p>
+                <p> Praesent et consequat elit. Etiam eu elit ullamcorper, laoreet orci eget, consequat nunc. Nullam in hendrerit metus, id pharetra lorem. Duis pulvinar et neque eu dignissim. Vivamus eget orci scelerisque, faucibus arcu sit amet, tincidunt felis. Nulla porttitor mauris sapien, in gravida quam blandit sollicitudin. Curabitur suscipit ullamcorper arcu sed viverra.</p>
+            </article>
+        </div>
+
+    
+    <!--main-->
+
+    <div class="service-box">
+        <div class="single-service">
+            <img src="images/bracketimg.png" alt="projektbild-html-1">
+        </div>
+        <div class="single-service">
+            <a href="https://codeinstitute.net/5-day-coding-challenge/">
+            <img src="images/html1.jpg" alt="projektbild-html-2">
+            <div class="overlay"></div>
+            </a>
+            <div class="service-desc">
+                <h3>Länk</h3>
+                <hr>
+                <p>Kurs</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <a href="https://www.youtube.com/watch?v=UB1O30fR-EE">
+            <img src="images/html2.png" alt="projektbild-html-3">
+            <div class="overlay"></div>
+            </a>
+            <div class="service-desc">
+                <h3>Länk</h3>
+                <hr>
+                <p>Video Tutorial</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="images/bracketimg.png" alt="projektbild-html-4">
+        </div>
+    </div>
+</div>
+        <!-- Footer -->
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/Shejkis">
+            <img src="images/fb.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com">
+            <img src="images/tw.png" alt="twitter">
+            <a/>
+            <a href="https://www.instagram.com/redonshaqiri/">
+            <img src="images/ig.png" alt="instagram">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Script -->
+        <script>
+
+            var menulist = document.getElementById("menulist");
+    
+            menulist.style.maxHeight = "0px";
+    
+            function togglemenu(){
+    
+                if(menulist.style.maxHeight == "0px")
+                {
+                menulist.style.maxHeight = "130px"
+                }
+                else
+                {
+                    menulist.style.maxHeight = "0px"
+                }
+            }
+    
+        </script>
+        
+    </body>
+    </html>
